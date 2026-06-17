@@ -41,9 +41,9 @@ int main()
                 printf("\n");
             }    
                 printf("\nMatrix 2 - \n");
-                for(i=0; i<r1; i++)
+                for(i=0; i<r2; i++)
                  {
-                   for(j=0; j<c1; j++)
+                   for(j=0; j<c2; j++)
                      {
                        printf("%d\t", b[i][j]);
                      }   
@@ -52,7 +52,7 @@ int main()
           printf("\nAddition of matrix 1 and matrix 2 gives - \n");
           for(i=0; i<r1; i++)
             {
-             for(j=0; j<c2; j++)
+             for(j=0; j<c1; j++)
                {
                   c[i][j] = a[i][j] + b[i][j];
                }
@@ -71,4 +71,5 @@ int main()
   {
     printf("Order of both the matrices must be same for addition!");
   }
+  return 0;
 }
